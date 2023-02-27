@@ -1,0 +1,149 @@
+html{
+	background: rgba(0, 0, 0, 0.05);
+}
+body {
+	margin : 0;
+	margin-left : 16vh;
+	margin-right: 16vh;
+	background: white;
+	font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	overflow-y: scroll;
+	/* padding-bottom : 1000000px; */
+		
+}
+
+.header {
+	/* background : red; */
+	height : 7vh;
+	border-bottom: 0.1vh solid rgba(0, 0,0,0.15);
+	display : flex;
+	column-gap: 1.5vw;
+	font-size: 1rem;
+	align-items : center;
+	font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding-left : 2vw;
+}
+
+.header2{
+	border-bottom  : none;
+}
+
+a  {
+	color : black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.try {
+	color : blue;
+}
+
+.Login {
+	font-size : 0.8em;
+}
+
+.header_right{
+		display  : flex;
+		flex-grow : 100;
+		padding : 5ch;
+		/* min-width : 55vw; */
+		column-gap : 1.5vw;
+		align-items : center;
+		justify-content: flex-end;
+}
+
+.main_image_1{
+	position : relative;
+	height : 800px;
+	max-width : 84%;
+	/* width : 80%; */
+}
+
+.first_screen {
+	position: relative;
+	text-align: center;
+	color: white;
+	grid-area: image_header;
+
+}
+.ableton_in_image {
+    position : absolute;
+    top : 27%;
+    left : 36%;
+    font-weight : 400;
+    font-size : 8rem;
+    color: red;
+    
+}
+
+.first_text{
+	font-weight : bold;
+	font-size : 1.5rem;
+	line-height: 2.5rem;	
+	grid-area: first_text;
+}
+
+.second_text{
+	padding-top : 1rem;
+	font-size : 1.1rem;
+	font-weight:400;
+	line-height : 1.8rem;
+}
+
+.text-pad{
+	padding-left : 26%;
+	padding-right : 26%;
+}
+
+
+.main_grid{	
+	display :  grid;
+	grid-template-areas: 'image_header'
+			     'first_text'
+			     'second_images_section';
+	row-gap: 8.5rem;
+}
+
+.second_images_section{
+	z-index : 1;
+	grid-area: second_images_section;
+	display : grid;
+	grid-template-areas :  ' . sound_bar .'
+			       ' . sound_bar .'
+			       ' . sound_bar blur'
+			       ' . sound_bar .';
+}
+
+/* .yellow { */
+/* 	position: absolute; */
+/* 	top : 1320px; */
+/* 	left : 850px; */
+/* 	background: rgba(255, 253, 108, 0.8); */
+/* 	height : 600px; */
+/* 	width :  47%; */
+/* 	z-index: 0; */
+/* } */
+
+.sound_bar{
+	grid-area : sound_bar;
+	height : 400px;
+	/* width : 600px; */
+}
+
+.blur{
+	grid-area: blur;
+	background: yellow;
+	height : 300px;
+	/* width : 300px; */
+}
+
+
+footer{
+	margin-top: 100px;
+	border-top: 0.1vh solid rgba(0, 0,0,0.15);
+}
+
+
+
+
+

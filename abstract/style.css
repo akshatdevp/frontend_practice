@@ -1,0 +1,175 @@
+body {
+	margin : 0;
+	font-family: 'GT America Standard', sans-serif;
+	font-weight : 200;
+}
+.header_1{
+	background: black;
+	height : 8.5vh;
+	width : 100%;
+	display : flex;
+	align-items: center;
+	justify-content: space-around;
+	/* padding-left : 10ch; */
+	/* padding-right: 10ch; */
+	column-gap : 60ch;
+	font-size : 1.5rem;
+	color : white;
+}
+
+.header_1 a {
+	color : white;
+	text-decoration: none;
+}
+
+.header_1_right {
+	display : flex;
+	column-gap : 1ch;
+}
+
+.header_1_left{
+	display : flex;
+	column-gap : 1ch;
+}
+
+.header_button{
+	height : 3rem;
+	color: white;
+	font-size : 1.5rem;
+	background: none;
+	padding : 0 2rem;
+}
+
+.submit{
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+.sign_in{
+	background :#4C5FD5;
+	border-radius : 10px;
+	transition: background 0.5s;
+	/* height : 3rem; */
+	/* padding : 0 3rem; */
+}
+
+.sign_in:hover{
+	background  : white;
+	color : black;
+}
+
+.header_2{
+	letter-spacing: -4px;
+	font-family: 'GT America Standard', sans-serif;
+	font-size: 2.5rem;
+	background-color : #DADBF1;
+	height : 40vh;
+	display : flex;
+	flex-direction: column;
+	align-items : center;
+	justify-content : center;
+}
+
+.search{
+	height : 5vh;
+	width : 40vw;
+	font-size : 1.5rem;
+	padding-left : 1rem;
+	border  : 1px solid black;
+	transition : border 0.2s;
+}
+
+
+.search:hover {
+	border  : 1px solid #DADBF1;
+}
+
+.flex {
+	display : flex;
+	align-items: center;
+	column-gap: 3ch;
+}
+
+.no-style{
+	background: white;
+	height : 70%;
+	transform: translateX(-110px);
+	font-size: 1rem;
+	font-weight: bold;
+	border : none;
+}
+
+.main_content {
+	padding-top : 100px;
+	display : grid ;	
+	/* justify-content: center;	 */
+	align-items: center;
+	grid-template-areas:  
+	'. . . .' 
+	'. a b .' 
+	'. c d . '
+	'. e f .';
+	grid-template-columns: 10vw 35vw 35vw 15vw; 
+	column-gap : 5vw;
+}
+
+.main_content img{
+	height : 80px;
+	width : 80px;
+}
+
+.a{
+	grid-area : a;
+}
+.b{
+	grid-area : b;
+}
+
+.c{
+	grid-area : c;
+}
+.d{
+	grid-area : d;
+}
+
+.e{
+	grid-area : e;
+}
+
+.f{
+	grid-area : f;
+}
+
+
+.max_width{
+	max-width: 50ch;
+	font-size: 1.5rem;
+}
+
+h3{
+	font-size : 1.5em;
+}
+
+.stick {
+	position: fixed;
+	bottom : 1rem;
+	right : 1rem;
+}
+
+footer{
+	background: black;
+	height : 20vw;
+	margin-top : 5vw;
+	display : flex;
+	justify-content: space-evenly;
+	color : white;
+	/* column-gap: 5ch; */
+	padding : 1ch;
+	text-align: left;
+}
+
+ul {
+	list-style-type: none;
+	padding : 0;
+	line-height: 2rem;
+}

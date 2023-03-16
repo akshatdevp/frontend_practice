@@ -1,0 +1,36 @@
+body {
+	--current_background : green;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app{
+	height : 100vh;
+	width: 100vw;
+	background : var(--current_background);
+}
+
+header{
+	background : yellow;
+	height : 100px;
+	width : 100%;
+	position :absolute;
+	top : 0;
+	left : 0;
+	display : flex; justify-content:space-around;
+	font-weight: bolder;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+	height : 100px;
+	width : 100%;
+	display : flex; justify-content: space-around;
+	position :absolute;
+	bottom : 0;
+	left : 0;
+	background : green;
+}

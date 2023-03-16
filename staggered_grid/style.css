@@ -1,0 +1,19 @@
+
+body {
+	background: rgb(20,20,20);
+	height : 100vh;
+	overflow: hidden;
+	margin: 0px;
+}
+
+.tiles_wrapper{
+	height : 100vh;
+	width : 100vw;
+	display : grid;
+	grid-template-columns: repeat(var(--cols),1fr);
+	grid-template-rows: repeat(var(--rows),1fr);
+}
+
+.tile {
+	border : 1px solid yellow;
+}
